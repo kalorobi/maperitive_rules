@@ -490,18 +490,18 @@ rules
 //bozotos
 		elseif : scrub
 			define
-				fill-texture : Textures/bozot.png
+				fill-texture : Textures/Matra/bozot.png
 //gyumolcsos
 		elseif: orchard
 			define
-				fill-texture : Textures/gyumolcsos.png
+				fill-texture : Textures/Matra/gyumolcsos.png
 //szollo
 		elseif: vineyard
 			define
-				fill-texture : Textures/wineyard.png
+				fill-texture : Textures/Matra/wineyard.png
 		elseif : cemetery
 			define
-				fill-texture : Textures/temeto.png
+				fill-texture : Textures/Matra/temeto.png
 		else
 			stop
 		draw : fill
