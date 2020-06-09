@@ -1,5 +1,3 @@
-//Kaló Róbert
-
 //relation elemek name miatt
 //import-script : name.py
 
@@ -15,10 +13,9 @@ features
 		meadow : natural=meadow OR landuse=meadow OR natural=grassland
 		forest : landuse=forest OR natural=wood
 		farmland : landuse=farmland
-		farmyard : lanuse=farmyard
+		farmyard : landuse=farmyard
 		vineyard : landuse=vineyard
 		orchard : landuse=orchard
-		scrub : landuse=scrub
 		park : leisure=park
 		cemetery : landuse=cemetery OR amenity=grave_yard
 		water : natural=water OR waterway=riverbank OR landuse=reservoir OR landuse=basin or waterway=dock
@@ -79,7 +76,7 @@ features
 		amenity bus_station : amenity=bus_station
 		spring : natural=spring
 		peak : natural=peak
-		cross : man_mde=cross OR historic=wayside_cross
+		cross : man_made=cross OR historic=wayside_cross
 		viewpoint : tourism=viewpoint
 		cave : natural=cave_entrance
 		cliff : natural=cliff
