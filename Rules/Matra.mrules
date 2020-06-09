@@ -1,6 +1,4 @@
-//relation elemek name miatt
 //import-script : name.py
-
 features
 
 	points, areas
@@ -16,6 +14,7 @@ features
 		farmyard : landuse=farmyard
 		vineyard : landuse=vineyard
 		orchard : landuse=orchard
+		scrub : landuse=scrub
 		park : leisure=park
 		cemetery : landuse=cemetery OR amenity=grave_yard
 		water : natural=water OR waterway=riverbank OR landuse=reservoir OR landuse=basin or waterway=dock
@@ -174,7 +173,7 @@ rules
 			font-weight : normal
 			font-size : 13:6;15:10
 			min-zoom : 13
-			text : @if(name, name, "templom")
+			text : @if(name, ".   "name)
 			text-align-horizontal : near
 			text-color : #C00A81
 			text-max-width : 24
@@ -199,7 +198,7 @@ rules
 			font-weight : normal
 			font-size : 13:6;15:10
 			min-zoom : 13
-			text : @if(name, name, "kilátó")
+			text : @if(name, ".   "name)
 			text-align-horizontal : near
 			text-color : #C00A81
 			text-max-width : 24
@@ -216,7 +215,7 @@ rules
 			font-weight : normal
 			font-size : 13:6;15:10
 			min-zoom : 13
-			text : @if(name, name, "kastély")
+			text : @if(name, ".  "name)
 			text-align-horizontal : near
 			text-color : #C00A81
 			text-max-width : 24
@@ -233,7 +232,7 @@ rules
 			font-weight : normal
 			font-size : 13:6;15:10
 			min-zoom : 13
-			text : @if(name, name, "rom")
+			text : @if(name, ".  "name)
 			text-align-horizontal : near
 			text-color : #C00A81
 			text-max-width : 24
@@ -250,7 +249,7 @@ rules
 			font-weight : normal
 			font-size : 13:6;15:10
 			min-zoom : 13
-			text : @if(name, name)
+			text : @if(name, ".   "name)
 			text-align-horizontal : near
 			text-color : #C00A81
 			text-max-width : 24
@@ -267,7 +266,7 @@ rules
 			font-weight : normal
 			font-size : 13:6;15:10
 			min-zoom : 13
-			text : @if(name, name)
+			text : @if(name, ".   "name)
 			text-align-horizontal : near
 			text-color : black
 			text-max-width : 15
@@ -284,7 +283,7 @@ rules
 			font-weight : normal
 			font-size : 13:6;15:10
 			min-zoom : 13
-			text : @if(name, name)
+			text : @if(name, ".   "name)
 			text-align-horizontal : near
 			text-color : black
 			text-max-width : 15
@@ -302,7 +301,7 @@ rules
 			font-weight : normal
 			font-size : 13:6;15:10
 			min-zoom : 13
-			text : @if(name, name)
+			text : @if(name, ".   "name)
 			text-align-horizontal : near
 			text-color : black
 			text-max-width : 15
@@ -329,7 +328,7 @@ rules
 			font-weight : normal
 			font-size : 13:6;15:10
 			min-zoom : 13
-			text : @if(name, name @if(ele, "\n(" ele ")"), ele)
+			text : @if(name, ".   "name @if(ele, "\n(" ele ")"), ele)
 			text-align-vertical : near
 			text-color : black
 			text-max-width : 15
@@ -393,7 +392,7 @@ rules
 			font-weight : normal
 			font-size : 13:6;15:10
 			min-zoom : 14
-			text : @if(name, name)
+			text : @if(name, ".   "name)
 			text-align-vertical : near
 			text-color : #0097CE
 			text-max-width : 15
@@ -505,7 +504,6 @@ rules
 
 
 //turistajelzesek
-
 //	target : hiking_name
 //		define		
 //			font-style : italic
