@@ -1,5 +1,5 @@
 # maperitive rules
 
-<a href="http://maperitive.net/">Maperitive</a> programhoz egy térkép leíró stílus.
+<a href="http://maperitive.net/">Maperitive</a> programhoz térkép leíró stílus.
 
-Matra stílus
+Matra stílus:
